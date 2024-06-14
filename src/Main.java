@@ -1,15 +1,25 @@
+import java.util.ArrayList;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static Circle testCircle = new Circle("red", 22.5d);
     public static Square testSquare = new Square("blue", 3);
 
+    public static ArrayList<Shape> shapes = new ArrayList<>();
+
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
 
-        testCircle.displayInfo();
-        testSquare.displayInfo();
+        shapes.add(testCircle);
+        shapes.add(testSquare);
+        shapes.add(new Circle("green", 5.5));
+        shapes.add(new Square("pink", 75));
+
+        for (Shape s: shapes){
+            s.displayInfo();
+        }
 
 
     }
