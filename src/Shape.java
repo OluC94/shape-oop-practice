@@ -1,5 +1,5 @@
 public abstract class Shape {
-    protected String colour = "Unknown";
+    protected String colour;
 
     public Shape(String colour) {
         this.colour = colour;
@@ -15,7 +15,7 @@ public abstract class Shape {
 
     abstract String getType();
 
-    public void displayINfo(){
+    public void displayInfo(){
         System.out.println("Type: " + getType());
         System.out.println("Colour: " + getColour());
         System.out.println("Area: " + area());
