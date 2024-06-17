@@ -16,6 +16,7 @@ public class Main {
         shapes.add(testSquare);
         shapes.add(new Circle("green", 5.5));
         shapes.add(new Square("pink", 75));
+        shapes.add(new Rectangle("yellow", 50, 65));
 
         for (Shape s: shapes){
             s.displayInfo();

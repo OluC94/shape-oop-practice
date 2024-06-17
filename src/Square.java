@@ -1,5 +1,5 @@
 public class Square extends Shape {
-    private final double length;
+    final double length;
 
     public Square(String colour, double length) {
         super(colour);
